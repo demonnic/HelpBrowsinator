@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Browsinate!",
+    "fireLength": "999",
+    "patterns": [
+      {
+        "pattern": "POPIT START",
+        "type": "exactMatch"
+      }
+    ],
+    "children": [
+      {
+        "name": "help capture",
+        "patterns": [
+          {
+            "pattern": "return true",
+            "type": "lua"
+          }
+        ]
+      },
+      {
+        "name": "Prompt",
+        "patterns": [
+          {
+            "pattern": "",
+            "type": "prompt"
+          }
+        ],
+        "script": "setTriggerStayOpen('Browsinate!', 0)"
+      }
+    ]
+  }
+]
