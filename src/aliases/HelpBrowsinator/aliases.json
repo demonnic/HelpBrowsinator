@@ -1,6 +1,22 @@
 [
   {
-    "name": "HelpBrowsinator",
-    "regex": "^HelpBrowsinator$"
+    "name": "help",
+    "regex": "(?i)^help( .+)?",
+    "script": "browsinator:execute('HELP', matches[2])"
+  },
+  {
+    "name": "chelp",
+    "regex": "(?i)^chelp( .+)?",
+    "script": "browsinator:execute('CHELP', matches[2])"
+  },
+  {
+    "name": "ghelp",
+    "regex": "(?i)^ghelp( .+)?",
+    "script": "browsinator:execute('GHELP', matches[2])"
+  },
+  {
+    "name": "ab",
+    "regex": "(?i)^ab( .+)?",
+    "script": "browsinator:execute('AB', matches[2])"
   }
 ]

@@ -4,7 +4,7 @@
     "fireLength": "999",
     "patterns": [
       {
-        "pattern": "POPIT START",
+        "pattern": "BROWSINATOR START",
         "type": "exactMatch"
       }
     ],
@@ -29,5 +29,19 @@
         "script": "setTriggerStayOpen('Browsinate!', 0)"
       }
     ]
+  },
+  {
+    "name": "Separator capture",
+    "patterns": [
+      {
+        "pattern": "^Current separator\\:·(.+)$",
+        "type": "regex"
+      },
+      {
+        "pattern": "^Your config separator will now be\\: '(.+)'.$",
+        "type": "regex"
+      }
+    ],
+    "script": "browsinator.sep = matches[2]"
   }
 ]
