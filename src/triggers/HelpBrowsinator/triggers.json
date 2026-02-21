@@ -40,6 +40,10 @@
       {
         "pattern": "^Your config separator will now be\\: '(.+)'.$",
         "type": "regex"
+      },
+      {
+        "pattern": "Your current separator is: (.+)$",
+        "type": "regex"
       }
     ],
     "script": "browsinator.sep = matches[2]"
