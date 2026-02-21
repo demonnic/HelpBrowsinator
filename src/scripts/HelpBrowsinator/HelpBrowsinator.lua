@@ -100,5 +100,5 @@ function browsinator:echo(msg)
 end
 
 registerNamedEventHandler("browsinator", "login", "gmcp.Char.Name", function()
-  send("config separator", false)
+  tempTimer(0.5, [[send("config separator", false)]])
 end)
