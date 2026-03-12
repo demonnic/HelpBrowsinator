@@ -25,12 +25,12 @@
     "script": "browsinator:execute('CLHELP', matches[2])"
   },
   {
-    "name": "chelp",
+    "name": "c0help",
     "regex": "(?i)^cohelp( .+)?$",
     "script": "browsinator:execute('COHELP', matches[2])"
   },
   {
-    "name": "chelp",
+    "name": "0help",
     "regex": "(?i)^ohelp( .+)?$",
     "script": "browsinator:execute('OHELP', matches[2])"
   }

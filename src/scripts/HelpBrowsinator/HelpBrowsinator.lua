@@ -84,7 +84,7 @@ function browsinator:execute(command, params)
   if not self.emco then
     self:create()
   end
-  local fullCommand = command .. params or ""
+  local fullCommand = command .. (params or "")
   self.lastCommand = command
   self.container:show()
   self.emco:clear(command)
