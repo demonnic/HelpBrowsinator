@@ -5,7 +5,10 @@ local consoles = {
   "HELP",
   "CHELP",
   "GHELP",
-  "AB"
+  "AB",
+  "CLHELP",
+  "OHELP",
+  "COHELP",
 }
 local defaultConfig = {
   activeColor = "black",
@@ -65,6 +68,9 @@ function browsinator:create()
       CHELP = function(msg) browsinator:execute("CHELP", " " .. msg) end,
       GHELP = function(msg) browsinator:execute("GHELP", " " .. msg) end,
       AB = function(msg) browsinator:execute("AB", " " .. msg) end,
+      CLHELP = function(msg) browsinator:execute("CLHELP", " " .. msg) end,
+      OHELP = function(msg) browsinator:execute("OHELP", " " .. msg) end,
+      COHELP = function(msg) browsinator:execute("COHELP", " " .. msg) end,
     },
     consoleColor = defaultConfig.background,
     activeTabCSS = activeStyle:getCSS(),
